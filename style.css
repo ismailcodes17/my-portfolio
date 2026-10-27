@@ -142,9 +142,14 @@ h2 { margin: 0 0 20px; font-size: 2rem; }
   max-width: 720px;
 }
 
+#about {
+  min-height: 70vh;
+}
+
 #about .lead {
-  font-size: 1.35rem;
-  max-width: 760px;
+  font-size: clamp(1.7rem, 3.2vw, 2.35rem);
+  line-height: 1.45;
+  max-width: 920px;
 }
 
 .projects, .notes {
