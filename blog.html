@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog · Ismail Jeylani</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="index.html">
+      <img src="me.jpg" alt="Ismail Jeylani">
+      <span>Ismail Jeylani</span>
+    </a>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="offer.html">What I offer</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Blog</h1>
+
+    <article class="post">
+      <h2>How I start a project</h2>
+      <p>
+        I start with one thing a person can do, then I split the work.
+        The page is HTML. If the page needs buttons and a lot of pieces,
+        I use React. If the page needs to save something, Python talks to
+        Postgres. The browser does not hold the database password.
+      </p>
+    </article>
+
+    <article class="post">
+      <h2>Game Flix</h2>
+      <p>
+        The chart from Steam has ranks, not names. I ask Steam a second time
+        for the title of each game on the screen. Saved games stay in
+        Postgres after the chart changes. Search calls Steam too, because
+        typing gta has to find Grand Theft Auto, not only the games already
+        on the page.
+      </p>
+    </article>
+
+    <article class="post">
+      <h2>PokéParty and Close Calls</h2>
+      <p>
+        PokéParty is a team builder. React is the site. Python asks PokéAPI
+        and saves a team of six. Close Calls does the same kind of split
+        with NASA: the picture of the day and asteroids that pass near
+        Earth, with favorites stored in Postgres.
+      </p>
+    </article>
+  </main>
+</body>
+</html>

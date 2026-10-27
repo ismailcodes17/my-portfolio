@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ismail Jeylani</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="bar">
+    <a class="brand" href="#home">
+      <img src="me.jpg" alt="Ismail Jeylani">
+      <span>Ismail Jeylani</span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#offer">Skills</a>
+      <a href="#blog">Notes</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div>
+      <p class="kicker">Columbus, OH · Columbus State</p>
+      <h1>Hello, I'm Ismail Jeylani</h1>
+      <p class="tag">First-year computer science student. I build small web apps with Python and React.</p>
+      <div class="hero-buttons">
+        <a class="btn" href="#work">View my work</a>
+        <a class="btn btn-ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <aside class="facts">
+      <p><span>School</span> Columbus State</p>
+      <p><span>Diploma</span> Charles School</p>
+      <p><span>Code</span> <a href="https://github.com/ismailcodes17">GitHub</a></p>
+      <p><span>Stack</span> Python, React, Postgres</p>
+    </aside>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <div class="panel">
+      <p>
+        I'm a web developer with a passion for creating beautiful and functional
+        websites. I specialize in front-end development, with experience in
+        Python. I love learning new technologies and improving my skills.
+      </p>
+      <p>
+        I finished high school at Charles School with my diploma. I am in
+        computer science at Columbus State now. The sites below are how I
+        practice: a page in front, Python behind it, and Postgres when
+        something needs to be saved.
+      </p>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Work</h2>
+    <div class="projects">
+      <article class="project">
+        <a class="screen screen-flix" href="https://gameflix-fawn.vercel.app/">
+          <div class="screen-bar">Game Flix</div>
+          <div class="screen-row"><span></span><span></span><span></span></div>
+        </a>
+        <div>
+          <p class="label">Python · FastAPI · Postgres</p>
+          <h3>Game Flix</h3>
+          <p>Steam's most-played games, a climbing list, search, and a save-for-later list with notes.</p>
+          <p class="links">
+            <a href="https://gameflix-fawn.vercel.app/">Live site</a>
+            <a href="https://github.com/ismailcodes17/gameflix">Code</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="screen screen-poke" href="https://poke-party.vercel.app">
+          <div class="screen-bar">PokéParty</div>
+          <div class="screen-row"><span></span><span></span><span></span></div>
+        </a>
+        <div>
+          <p class="label">React · FastAPI · Postgres</p>
+          <h3>PokéParty</h3>
+          <p>Search Pokémon and save a team of six. The site is React. The API and the database are Python and Postgres.</p>
+          <p class="links">
+            <a href="https://poke-party.vercel.app">Live site</a>
+            <a href="https://github.com/ismailcodes17/POKE-PARTY">Code</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="project">
+        <a class="screen screen-nasa" href="https://github.com/ismailcodes17/nasa-space-asteriod-close-calls">
+          <div class="screen-bar">Close Calls</div>
+          <div class="screen-row"><span></span><span></span><span></span></div>
+        </a>
+        <div>
+          <p class="label">Python · NASA API · Postgres</p>
+          <h3>NASA close calls</h3>
+          <p>Astronomy picture of the day and asteroids that pass near Earth, with favorites saved in Postgres.</p>
+          <p class="links">
+            <a href="https://github.com/ismailcodes17/nasa-space-asteriod-close-calls">Code</a>
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="offer">
+    <h2>What I use</h2>
+    <ul class="chips">
+      <li>Python</li>
+      <li>FastAPI</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>React</li>
+      <li>Postgres</li>
+      <li>Git</li>
+      <li>REST APIs</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>How I build</h2>
+    <div class="notes">
+      <article>
+        <h3>Where the work sits</h3>
+        <p>The browser draws the page. Python talks to the outside API and to Postgres. The database password stays on the server.</p>
+      </article>
+      <article>
+        <h3>Game Flix</h3>
+        <p>Steam's chart has ranks, not names. I ask again for the title of each game on screen. Saved games stay in Postgres. Search calls Steam so "gta" finds Grand Theft Auto.</p>
+      </article>
+      <article>
+        <h3>Same shape, new API</h3>
+        <p>PokéParty and Close Calls use the same split. React is the site. Python is the API. PokéAPI or NASA is the data. Postgres keeps the teams and the favorites.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p class="lead">Computer science internship resume. High school diploma from Charles School. Computer science at Columbus State.</p>
+    <a class="btn" href="resume.pdf" download>Download resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact me</h2>
+    <form>
+      <label>
+        Name
+        <input type="text" name="name">
+      </label>
+      <label>
+        Subject
+        <input type="text" name="subject">
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="6"></textarea>
+      </label>
+      <button type="button">Send</button>
+      <p class="contact-links">
+        <a href="https://www.linkedin.com/in/ismail-j-609a71354/">LinkedIn</a>
+        <a href="https://github.com/ismailcodes17">GitHub</a>
+        <a href="mailto:ismailj2800@gmail.com">Email</a>
+      </p>
+    </form>
+  </section>
+</body>
+</html>
