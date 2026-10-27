@@ -143,7 +143,11 @@ h2 { margin: 0 0 20px; font-size: 2rem; }
 }
 
 #about {
-  min-height: 70vh;
+  padding-bottom: 24px;
+}
+
+#work {
+  padding-top: 24px;
 }
 
 #about .lead {
