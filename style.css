@@ -7,7 +7,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-a { color: #ffb020; }
+a { color: #fff; }
 
 .bar {
   position: sticky;
@@ -50,24 +50,32 @@ a { color: #ffb020; }
   text-decoration: none;
 }
 
-.bar nav a:hover { color: #ffb020; }
+.bar nav a:hover { color: #fff; border-bottom: 1px solid #fff; }
 
 .hero {
-  min-height: 78vh;
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr;
-  gap: 32px;
-  align-items: end;
-  padding: 10vh 6vw 64px;
-  box-sizing: border-box;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 6vw 56px;
+}
+
+.portrait {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
 }
 
 .hero h1 {
-  margin: 0;
-  font-size: 4rem;
-  line-height: 0.95;
-  letter-spacing: -0.04em;
+  margin: 16px 0 0;
+  font-size: 2.8rem;
+  letter-spacing: -0.03em;
 }
+
+.hero .btn { margin-top: 22px; }
 
 .kicker, .tag { color: #a1a1aa; font-size: 1.05rem; }
 
@@ -87,6 +95,16 @@ a { color: #ffb020; }
   padding: 12px 18px;
   font: inherit;
   cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover, button:hover {
+  transform: translateY(-3px);
+  background: #e5e5e5;
+}
+
+.btn:active, button:active {
+  transform: translateY(0) scale(0.97);
 }
 
 .btn-ghost {
@@ -136,7 +154,7 @@ h2 { margin: 0 0 20px; font-size: 2rem; }
 
 .project {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 360px 1fr;
   gap: 22px;
   align-items: center;
   padding: 16px;
@@ -145,7 +163,26 @@ h2 { margin: 0 0 20px; font-size: 2rem; }
   border-radius: 18px;
 }
 
-.label { color: #ffb020; font-size: 0.85rem; margin-bottom: 4px; }
+.shot, .resume-shot {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  border: 1px solid #333;
+}
+
+.shot {
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.resume-shot {
+  max-width: 520px;
+  margin: 12px 0 18px;
+  background: white;
+}
+
+.label { color: #a1a1aa; font-size: 0.85rem; margin-bottom: 4px; }
 
 .screen {
   display: block;
@@ -229,6 +266,6 @@ button { width: fit-content; }
 }
 
 @media (max-width: 800px) {
-  .hero, .project, .notes, .chips { grid-template-columns: 1fr; }
-  .hero h1 { font-size: 2.4rem; }
+  .project, .notes, .chips { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2.1rem; }
 }
