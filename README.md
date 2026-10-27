@@ -1,0 +1,1 @@
+I'm a web developer with a passion for creating beautiful and functional websites. I specialize in front-end development, with experience in Python. I love learning new technologies and improving my skills.
