@@ -138,26 +138,42 @@
 
   <section id="contact">
     <h2>Contact me</h2>
-    <form>
+    <form id="contact-form">
       <label>
         Name
-        <input type="text" name="name">
+        <input type="text" name="name" required>
       </label>
       <label>
         Subject
-        <input type="text" name="subject">
+        <input type="text" name="subject" required>
       </label>
       <label>
         Message
-        <textarea name="message" rows="6"></textarea>
+        <textarea name="message" rows="6" required></textarea>
       </label>
-      <button type="button">Send</button>
+      <button type="submit">Send</button>
+      <p id="contact-note"></p>
       <p class="contact-links">
         <a href="https://www.linkedin.com/in/ismail-j-609a71354/">LinkedIn</a>
         <a href="https://github.com/ismailcodes17">GitHub</a>
         <a href="mailto:ismailj2800@gmail.com">Email</a>
       </p>
     </form>
+    <script>
+      const form = document.getElementById("contact-form");
+      const note = document.getElementById("contact-note");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const name = data.get("name");
+        const subject = data.get("subject");
+        const message = data.get("message");
+        const body = `Name: ${name}\n\n${message}`;
+        window.location.href = `mailto:ismailj2800@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        note.textContent = "Your email app should open. Hit send there and it goes to my Gmail.";
+      });
+    </script>
   </section>
 </body>
 </html>
